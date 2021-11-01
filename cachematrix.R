@@ -1,12 +1,12 @@
 
-#This function creates and returns a matrix-like list from a matrix, initializes the inverse as NULL.
+#This function creates and returns a matrix-like list from a matrix and initializes the inverse as NULL.
 
 makeCacheMatrix <- function(x = matrix()) {
   
   
   i <- NULL
   
-  # A function to set the matrix.
+  # A function to set the matrix, and reset the inverse to NULL.
   set <- function(y) {
     x <<- y
     i <<- NULL
